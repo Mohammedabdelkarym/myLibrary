@@ -1,0 +1,16 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="myLibrary.js"></script>
+    <script type="text/javascript">
+        myLibrary.fn.newPlugin = function(){
+            alert(this.arg);
+            return this;
+        };
+
+        myLibrary("aaaaaaa").newPlugin();
+        myLibrary("aaaaaaa").newPlugin().log();
+    </script>
+</head>
+</html>
